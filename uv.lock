@@ -1,0 +1,23 @@
+version = 1
+revision = 3
+requires-python = ">=3.12"
+
+[[package]]
+name = "common-use"
+version = "0.1.0"
+source = { editable = "." }
+dependencies = [
+    { name = "mltoolkit" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "mltoolkit", specifier = ">=0.0.3", index = "https://data-science-ai-839629613889.d.codeartifact.us-east-2.amazonaws.com/pypi/python-packages/simple/" }]
+
+[[package]]
+name = "mltoolkit"
+version = "0.0.3"
+source = { registry = "https://data-science-ai-839629613889.d.codeartifact.us-east-2.amazonaws.com/pypi/python-packages/simple/" }
+sdist = { url = "https://data-science-ai-839629613889.d.codeartifact.us-east-2.amazonaws.com/pypi/python-packages/simple/mltoolkit/0.0.3/mltoolkit-0.0.3.tar.gz", hash = "sha512:c407cc707815b67f3cd99443ae209c22d46bfd734c39191b35fad89f9cb9490d5eecc964318729133d362c8a839cdf5a9d9c84649c23d8ac3f52a099fcd50db0", size = 1844, upload-time = "2026-09-08T19:41:50.028Z" }
+wheels = [
+    { url = "https://data-science-ai-839629613889.d.codeartifact.us-east-2.amazonaws.com/pypi/python-packages/simple/mltoolkit/0.0.3/mltoolkit-0.0.3-py3-none-any.whl", hash = "sha512:e583f713a173f98c14de2dfc81e94fa7a9bb36fc03a07e52071acb3c3aba5a3afcb11fadb5b7ad9039b14f9770f62b64b33772b294628d475c578a3f83c564ca", size = 2267, upload-time = "2026-09-08T19:41:49.711Z" },
+]

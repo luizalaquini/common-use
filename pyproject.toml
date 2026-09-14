@@ -1,0 +1,27 @@
+[project]
+name = "common-use"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Luiza B. Laquini", email = "luizablaquini@hotmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "mltoolkit>=0.0.3",
+]
+
+[project.scripts]
+common-use = "common_use:main"
+
+[build-system]
+requires = ["uv_build>=0.12.3,<0.13.0"]
+build-backend = "uv_build"
+
+[[tool.uv.index]]
+name = "python-packages"
+url = "https://data-science-ai-839629613889.d.codeartifact.us-east-2.amazonaws.com/pypi/python-packages/simple/"
+explicit = true
+
+[tool.uv.sources]
+mltoolkit = { index = "python-packages" }
